@@ -1,0 +1,70 @@
+\hypertarget{student__record___01system_8h_source}{}\doxysection{student\+\_\+record\+\_\+ system.\+h}
+\label{student__record___01system_8h_source}\index{3\_Implementation/student\_record\_ system.h@{3\_Implementation/student\_record\_ system.h}}
+\mbox{\hyperlink{student__record___01system_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}add\_mod\_files.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keywordtype}{void} \mbox{\hyperlink{student__record___01system_8h_a1021df66c2a922ee9790f51040d9e4f8}{main\_window}}()\{}
+\DoxyCodeLine{9     \textcolor{keywordtype}{int} choice;}
+\DoxyCodeLine{10     \mbox{\hyperlink{add__mod__files_8c_aa7d42b816af66303171116657d399323}{SetColor}}(28);}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} x = 2;}
+\DoxyCodeLine{12     \textcolor{keywordflow}{while}(1)\{}
+\DoxyCodeLine{13         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,8);printf(\textcolor{stringliteral}{"{}1. Add Student"{}});}
+\DoxyCodeLine{14         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,10);printf(\textcolor{stringliteral}{"{}2. Search Student"{}});}
+\DoxyCodeLine{15         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,12);printf(\textcolor{stringliteral}{"{}3. Modify Student Record"{}});}
+\DoxyCodeLine{16         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,14);printf(\textcolor{stringliteral}{"{}4. Generate Marks"{}});}
+\DoxyCodeLine{17         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,16);printf(\textcolor{stringliteral}{"{}5. View Marks"{}});}
+\DoxyCodeLine{18         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,18);printf(\textcolor{stringliteral}{"{}6. Delete Student Record"{}});}
+\DoxyCodeLine{19         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,20);printf(\textcolor{stringliteral}{"{}7. Change password"{}});}
+\DoxyCodeLine{20         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,22);printf(\textcolor{stringliteral}{"{}8. Exit"{}});}
+\DoxyCodeLine{21         \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(x,24);printf(\textcolor{stringliteral}{"{}Enter your choice: "{}});}
+\DoxyCodeLine{22         scanf(\textcolor{stringliteral}{"{}\%d"{}},\&choice);}
+\DoxyCodeLine{23         \textcolor{keywordflow}{switch}(choice)\{}
+\DoxyCodeLine{24             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{25                 \mbox{\hyperlink{add__mod__files_8c_a8007152229d3e1168badc4898b8a1225}{add\_student}}();}
+\DoxyCodeLine{26                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{27             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{28                 \mbox{\hyperlink{add__mod__files_8c_a0863f4bf0c3c8bb51ce3682ed0d4bffa}{search\_student}}();}
+\DoxyCodeLine{29                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{30             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{31                 \mbox{\hyperlink{add__mod__files_8c_a57eeda7850a339eecfd4b3ad01d47c99}{mod\_student}}();}
+\DoxyCodeLine{32                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{33             \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{34                 \mbox{\hyperlink{add__mod__files_8c_a312c03b4985f2315a649bfa1d1e95de5}{gen\_marksheet}}();}
+\DoxyCodeLine{35                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{36             \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{37                 \mbox{\hyperlink{add__mod__files_8c_a2eeb989412cbff2c0a70bfc1f9274207}{view\_marks}}();}
+\DoxyCodeLine{38                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{39             \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{40                 \mbox{\hyperlink{add__mod__files_8c_aa8d5c27ed3b70e62cef5f12c77a4171c}{delete\_student}}();}
+\DoxyCodeLine{41                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{42             \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{43                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{44             \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{45                 exit(0);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{48             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{50         \}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{int} \mbox{\hyperlink{student__record___01system_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\{}
+\DoxyCodeLine{57     \mbox{\hyperlink{add__mod__files_8c_ae19f02e1880034ffb4c108f1046ec56b}{ClearConsoleToColors}}(17,15);}
+\DoxyCodeLine{58     SetConsoleTitle(\textcolor{stringliteral}{"{}Student Record System"{}});}
+\DoxyCodeLine{59     \mbox{\hyperlink{add__mod__files_8c_a0df472261d6be0025cff9bfa90d649ca}{window}}();}
+\DoxyCodeLine{60     \textcolor{comment}{//use\_pass\_field();}}
+\DoxyCodeLine{61     \mbox{\hyperlink{student__record___01system_8h_a1021df66c2a922ee9790f51040d9e4f8}{main\_window}}();}
+\DoxyCodeLine{62     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{63 \}}
+\DoxyCodeLine{64 }
+
+\end{DoxyCode}

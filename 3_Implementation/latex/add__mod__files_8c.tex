@@ -1,0 +1,175 @@
+\hypertarget{add__mod__files_8c}{}\doxysection{3\+\_\+\+Implementation/add\+\_\+mod\+\_\+files.c File Reference}
+\label{add__mod__files_8c}\index{3\_Implementation/add\_mod\_files.c@{3\_Implementation/add\_mod\_files.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstudent}{student}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_aa7d42b816af66303171116657d399323}{Set\+Color}} (int ForgC)
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_ae19f02e1880034ffb4c108f1046ec56b}{Clear\+Console\+To\+Colors}} (int ForgC, int BackC)
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_abbe25f0eeff314f676f3bc633a7b0a7e}{Set\+Color\+And\+Background}} (int ForgC, int BackC)
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}} (int x, int y)
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a11e3b0560dfd56fc91336361f2b45903}{draw\+Rectangle}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a2482e3e7ee87e8165dbd7067c8b28b54}{clear\+Window}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a0df472261d6be0025cff9bfa90d649ca}{window}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_ac36926f10c2ab714ddb65251a5054bcf}{get\+\_\+password}} (char $\ast$pass)
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_abb36af9be2ca28a308ccc54e4661d252}{use\+\_\+pass\+\_\+field}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_ac106bf2a0488c39f2d8d244cb8100b49}{print\+\_\+heading}} (const char st\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{add__mod__files_8c_a0cadac61a2a9a985afdc2ef2c8644b90}{conf\+\_\+record}} (char id\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a8007152229d3e1168badc4898b8a1225}{add\+\_\+student}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a0863f4bf0c3c8bb51ce3682ed0d4bffa}{search\+\_\+student}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a57eeda7850a339eecfd4b3ad01d47c99}{mod\+\_\+student}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a312c03b4985f2315a649bfa1d1e95de5}{gen\+\_\+marksheet}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_a2eeb989412cbff2c0a70bfc1f9274207}{view\+\_\+marks}} ()
+\item 
+void \mbox{\hyperlink{add__mod__files_8c_aa8d5c27ed3b70e62cef5f12c77a4171c}{delete\+\_\+student}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstudent}{student}} \mbox{\hyperlink{add__mod__files_8c_aea22f61226528a52d50f68beaa050bc2}{stu}}
+\item 
+COORD \mbox{\hyperlink{add__mod__files_8c_afd9018d32867a27a7ce20ae665e80462}{coord}} = \{0,0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{add__mod__files_8c_a8007152229d3e1168badc4898b8a1225}\label{add__mod__files_8c_a8007152229d3e1168badc4898b8a1225}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!add\_student@{add\_student}}
+\index{add\_student@{add\_student}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{add\_student()}{add\_student()}}
+{\footnotesize\ttfamily void add\+\_\+student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_ae19f02e1880034ffb4c108f1046ec56b}\label{add__mod__files_8c_ae19f02e1880034ffb4c108f1046ec56b}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!ClearConsoleToColors@{ClearConsoleToColors}}
+\index{ClearConsoleToColors@{ClearConsoleToColors}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{ClearConsoleToColors()}{ClearConsoleToColors()}}
+{\footnotesize\ttfamily void Clear\+Console\+To\+Colors (\begin{DoxyParamCaption}\item[{int}]{ForgC,  }\item[{int}]{BackC }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a2482e3e7ee87e8165dbd7067c8b28b54}\label{add__mod__files_8c_a2482e3e7ee87e8165dbd7067c8b28b54}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!clearWindow@{clearWindow}}
+\index{clearWindow@{clearWindow}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{clearWindow()}{clearWindow()}}
+{\footnotesize\ttfamily void clear\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a0cadac61a2a9a985afdc2ef2c8644b90}\label{add__mod__files_8c_a0cadac61a2a9a985afdc2ef2c8644b90}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!conf\_record@{conf\_record}}
+\index{conf\_record@{conf\_record}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{conf\_record()}{conf\_record()}}
+{\footnotesize\ttfamily int conf\+\_\+record (\begin{DoxyParamCaption}\item[{char}]{id\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_aa8d5c27ed3b70e62cef5f12c77a4171c}\label{add__mod__files_8c_aa8d5c27ed3b70e62cef5f12c77a4171c}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!delete\_student@{delete\_student}}
+\index{delete\_student@{delete\_student}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{delete\_student()}{delete\_student()}}
+{\footnotesize\ttfamily void delete\+\_\+student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a11e3b0560dfd56fc91336361f2b45903}\label{add__mod__files_8c_a11e3b0560dfd56fc91336361f2b45903}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily void draw\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a312c03b4985f2315a649bfa1d1e95de5}\label{add__mod__files_8c_a312c03b4985f2315a649bfa1d1e95de5}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!gen\_marksheet@{gen\_marksheet}}
+\index{gen\_marksheet@{gen\_marksheet}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{gen\_marksheet()}{gen\_marksheet()}}
+{\footnotesize\ttfamily void gen\+\_\+marksheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_ac36926f10c2ab714ddb65251a5054bcf}\label{add__mod__files_8c_ac36926f10c2ab714ddb65251a5054bcf}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!get\_password@{get\_password}}
+\index{get\_password@{get\_password}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{get\_password()}{get\_password()}}
+{\footnotesize\ttfamily void get\+\_\+password (\begin{DoxyParamCaption}\item[{char $\ast$}]{pass }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}\label{add__mod__files_8c_ae824443b3f661414ba1f2718e17fe97d}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!gotoxy@{gotoxy}}
+\index{gotoxy@{gotoxy}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{gotoxy()}{gotoxy()}}
+{\footnotesize\ttfamily void gotoxy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a57eeda7850a339eecfd4b3ad01d47c99}\label{add__mod__files_8c_a57eeda7850a339eecfd4b3ad01d47c99}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!mod\_student@{mod\_student}}
+\index{mod\_student@{mod\_student}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{mod\_student()}{mod\_student()}}
+{\footnotesize\ttfamily void mod\+\_\+student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_ac106bf2a0488c39f2d8d244cb8100b49}\label{add__mod__files_8c_ac106bf2a0488c39f2d8d244cb8100b49}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!print\_heading@{print\_heading}}
+\index{print\_heading@{print\_heading}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{print\_heading()}{print\_heading()}}
+{\footnotesize\ttfamily void print\+\_\+heading (\begin{DoxyParamCaption}\item[{const char}]{st\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a0863f4bf0c3c8bb51ce3682ed0d4bffa}\label{add__mod__files_8c_a0863f4bf0c3c8bb51ce3682ed0d4bffa}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!search\_student@{search\_student}}
+\index{search\_student@{search\_student}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{search\_student()}{search\_student()}}
+{\footnotesize\ttfamily void search\+\_\+student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_aa7d42b816af66303171116657d399323}\label{add__mod__files_8c_aa7d42b816af66303171116657d399323}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void Set\+Color (\begin{DoxyParamCaption}\item[{int}]{ForgC }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_abbe25f0eeff314f676f3bc633a7b0a7e}\label{add__mod__files_8c_abbe25f0eeff314f676f3bc633a7b0a7e}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!SetColorAndBackground@{SetColorAndBackground}}
+\index{SetColorAndBackground@{SetColorAndBackground}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{SetColorAndBackground()}{SetColorAndBackground()}}
+{\footnotesize\ttfamily void Set\+Color\+And\+Background (\begin{DoxyParamCaption}\item[{int}]{ForgC,  }\item[{int}]{BackC }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_abb36af9be2ca28a308ccc54e4661d252}\label{add__mod__files_8c_abb36af9be2ca28a308ccc54e4661d252}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!use\_pass\_field@{use\_pass\_field}}
+\index{use\_pass\_field@{use\_pass\_field}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{use\_pass\_field()}{use\_pass\_field()}}
+{\footnotesize\ttfamily void use\+\_\+pass\+\_\+field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a2eeb989412cbff2c0a70bfc1f9274207}\label{add__mod__files_8c_a2eeb989412cbff2c0a70bfc1f9274207}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!view\_marks@{view\_marks}}
+\index{view\_marks@{view\_marks}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{view\_marks()}{view\_marks()}}
+{\footnotesize\ttfamily void view\+\_\+marks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{add__mod__files_8c_a0df472261d6be0025cff9bfa90d649ca}\label{add__mod__files_8c_a0df472261d6be0025cff9bfa90d649ca}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!window@{window}}
+\index{window@{window}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily void window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{add__mod__files_8c_afd9018d32867a27a7ce20ae665e80462}\label{add__mod__files_8c_afd9018d32867a27a7ce20ae665e80462}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!coord@{coord}}
+\index{coord@{coord}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{coord}{coord}}
+{\footnotesize\ttfamily COORD coord = \{0,0\}}
+
+\mbox{\Hypertarget{add__mod__files_8c_aea22f61226528a52d50f68beaa050bc2}\label{add__mod__files_8c_aea22f61226528a52d50f68beaa050bc2}} 
+\index{add\_mod\_files.c@{add\_mod\_files.c}!stu@{stu}}
+\index{stu@{stu}!add\_mod\_files.c@{add\_mod\_files.c}}
+\doxysubsubsection{\texorpdfstring{stu}{stu}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structstudent}{student}} stu}
+
